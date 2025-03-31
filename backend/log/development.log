@@ -1,0 +1,285 @@
+Started GET "/dashboard" for ::1 at 2025-03-28 14:58:56 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+Started GET "/weather/1" for ::1 at 2025-03-28 14:59:05 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"days"=>"1"}
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.0ms | Allocations: 4024)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#get is missing a template for request formats: text/html):
+  
+actionpack (7.0.8.7) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.8.7) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.8.7) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.8.7) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.8.7) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.8.7) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+turbo-rails (2.0.12) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.12) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.7) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.7) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.7) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.7) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.7) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.7) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.7) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.7) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.7) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.7) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.7) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.7) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.7) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.7) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.13) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.13) lib/rack/etag.rb:27:in `call'
+rack (2.2.13) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.13) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/http/content_security_policy.rb:39:in `call'
+rack (2.2.13) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.13) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.7) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.13) lib/rack/method_override.rb:24:in `call'
+rack (2.2.13) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.13) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.7) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.9) lib/puma/configuration.rb:252:in `call'
+puma (5.6.9) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.9) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.9) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.9) lib/puma/server.rb:443:in `process_client'
+puma (5.6.9) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/weather/1" for ::1 at 2025-03-28 14:59:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"days"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/weather/Kuala%20Lumpur/7" for ::1 at 2025-03-31 14:21:12 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"Kuala Lumpur", "days"=>"7"}
+Completed 200 OK in 1326ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 6068)
+
+
+Started GET "/weather/London/7" for ::1 at 2025-04-01 00:18:50 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"7"}
+Completed 200 OK in 1361ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2150)
+
+
+Started GET "/weather/London/7" for ::1 at 2025-04-01 00:52:20 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"7"}
+Completed 200 OK in 1434ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 6337)
+
+
+Started GET "/weather/London/365" for ::1 at 2025-04-01 00:52:30 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"365"}
+Completed 422 Unprocessable Entity in 1602ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 2107)
+
+
+Started GET "/weather/London/100" for ::1 at 2025-04-01 00:52:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"100"}
+Completed 422 Unprocessable Entity in 1305ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1881)
+
+
+Started GET "/weather/London/50" for ::1 at 2025-04-01 00:52:59 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"50"}
+Completed 422 Unprocessable Entity in 1368ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 1885)
+
+
+Started GET "/weather/London/5" for ::1 at 2025-04-01 00:53:08 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"5"}
+Completed 200 OK in 1364ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2021)
+
+
+Started GET "/weather/London/5" for ::1 at 2025-04-01 00:53:52 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"5"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 756)
+
+
+Started GET "/weather/London/6" for ::1 at 2025-04-01 00:53:57 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"6"}
+Completed 500 Internal Server Error in 1268ms (ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+  
+NoMethodError (undefined method `call' for 11.028571428571428:Float):
+  
+app/services/weather_service.rb:61:in `fetch_average_temperature'
+app/services/weather_service.rb:22:in `average_temperature'
+app/controllers/weather_controller.rb:7:in `get'
+Started GET "/weather/London/6" for ::1 at 2025-04-01 00:54:06 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"6"}
+Completed 200 OK in 1229ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 2712)
+
+
+Started GET "/weather/kuala%20lumpur/6" for ::1 at 2025-04-01 00:55:50 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"kuala lumpur", "days"=>"6"}
+Completed 200 OK in 1349ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2038)
+
+
+Started GET "/weather/kualalumpur/7" for ::1 at 2025-04-01 01:03:18 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"kualalumpur", "days"=>"7"}
+Completed 422 Unprocessable Entity in 665ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 5107)
+
+
+Started GET "/weather/kuala%20lumpur/7" for ::1 at 2025-04-01 02:47:02 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"kuala lumpur", "days"=>"7"}
+Completed 200 OK in 1403ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 6362)
+
+
+Started GET "/weather/Singapore/7" for 172.19.0.1 at 2025-03-31 19:04:57 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"Singapore", "days"=>"7"}
+Completed 200 OK in 1637ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 6826)
+
+
+Started GET "/weather/Singapore/7" for 172.19.0.1 at 2025-03-31 19:05:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"Singapore", "days"=>"7"}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 223)
+
+
+Started GET "/dashboard" for ::1 at 2025-04-01 03:59:00 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+Started GET "/weather/London/" for ::1 at 2025-04-01 04:04:26 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/weather/London"):
+  
+Started GET "/weather/London/5" for ::1 at 2025-04-01 04:07:34 +0800
+Processing by WeatherController#get as */*
+  Parameters: {"city"=>"London", "days"=>"5"}
+Completed 200 OK in 1342ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 6363)
+
+
+Started GET "/weather/London/5" for ::1 at 2025-04-01 04:07:50 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 290)
+
+
+Started GET "/weather/Singapore/5" for ::1 at 2025-04-01 04:07:59 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"Singapore", "days"=>"5"}
+Completed 200 OK in 1326ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2145)
+
+
+Started GET "/weather/London/5" for ::1 at 2025-04-01 04:11:22 +0800
+Processing by WeatherController#get as */*
+  Parameters: {"city"=>"London", "days"=>"5"}
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3744)
+
+
+Started OPTIONS "/weather/London/5" for ::1 at 2025-04-01 04:13:37 +0800
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/weather/London/5"):
+  
+Started OPTIONS "/weather/London/3" for ::1 at 2025-04-01 04:14:05 +0800
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/weather/London/3"):
+  
+Started OPTIONS "/weather/Singapore/11" for ::1 at 2025-04-01 04:16:18 +0800
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/weather/Singapore/11"):
+  
+Started OPTIONS "/weather/Singapore/11" for ::1 at 2025-04-01 04:17:50 +0800
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/weather/Singapore/11"):
+  
+Started GET "/weather/Singapore/11" for ::1 at 2025-04-01 04:24:05 +0800
+Processing by WeatherController#get as JSON
+  Parameters: {"city"=>"Singapore", "days"=>"11", "weather"=>{}}
+Completed 200 OK in 1387ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 6247)
+
+
+Started GET "/weather/London/11" for ::1 at 2025-04-01 04:24:17 +0800
+Processing by WeatherController#get as JSON
+  Parameters: {"city"=>"London", "days"=>"11", "weather"=>{}}
+Completed 200 OK in 1375ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2240)
+
+
+Started GET "/weather/London/11" for ::1 at 2025-04-01 04:29:39 +0800
+Processing by WeatherController#get as JSON
+  Parameters: {"city"=>"London", "days"=>"11", "weather"=>{}}
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/weather/Bangkok/11" for ::1 at 2025-04-01 04:29:50 +0800
+Processing by WeatherController#get as JSON
+  Parameters: {"city"=>"Bangkok", "days"=>"11", "weather"=>{}}
+Completed 200 OK in 1406ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2033)
+
+
+Started GET "/weather/Bangkok/" for ::1 at 2025-04-01 04:31:36 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/weather/Bangkok"):
+  
+Started GET "/weather/Bangkokasdasd/11" for ::1 at 2025-04-01 04:32:05 +0800
+Processing by WeatherController#get as JSON
+  Parameters: {"city"=>"Bangkokasdasd", "days"=>"11", "weather"=>{}}
+Completed 422 Unprocessable Entity in 559ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1175)
+
+
+Started GET "/weather/Bangkokasdasd/11" for ::1 at 2025-04-01 04:42:25 +0800
+Processing by WeatherController#get as JSON
+  Parameters: {"city"=>"Bangkokasdasd", "days"=>"11", "weather"=>{}}
+Completed 422 Unprocessable Entity in 588ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1675)
+
+

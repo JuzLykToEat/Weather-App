@@ -1,0 +1,511 @@
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 01:25:38 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 422 Unprocessable Entity in 88ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 76810)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 01:25:38 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2101)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 01:25:38 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1215)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 01:30:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 422 Unprocessable Entity in 34ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 36071)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 01:30:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2101)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 01:30:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1215)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 01:34:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 422 Unprocessable Entity in 21ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 36070)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 01:34:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2105)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 01:34:47 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1216)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 01:37:34 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 422 Unprocessable Entity in 32ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 36071)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 01:37:34 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2103)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 01:37:34 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1215)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 01:58:55 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 422 Unprocessable Entity in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 36071)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 01:58:55 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2105)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 01:58:55 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1216)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 01:59:49 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 500 Internal Server Error in 20655ms (ActiveRecord: 0.0ms | Allocations: 246188)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 02:21:05 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 39249)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 02:21:05 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2100)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 02:21:05 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4330)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 02:23:15 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3304)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 02:23:15 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 32945)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 02:23:15 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 233)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 02:24:35 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3304)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 02:24:35 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 32945)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 02:24:35 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 233)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 02:27:43 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3304)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 02:27:43 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 27ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 32945)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 02:27:43 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 02:28:37 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3304)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 02:28:37 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 26ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 32945)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 02:28:37 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:42:58 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms | Allocations: 39996)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:42:58 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2184)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:42:58 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:44:13 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4042)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:44:13 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 29ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:44:14 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:44:46 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4042)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:44:46 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 26ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:44:46 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:45:15 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4042)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:45:15 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 28ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:45:15 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:47:46 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4042)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:47:46 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 31ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:47:46 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:48:33 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4043)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:48:33 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 28ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:48:33 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:49:52 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4043)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:49:52 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 28ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:49:52 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:50:18 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4043)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:50:18 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 28ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:50:18 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:51:02 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5751)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:51:02 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 28ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 33032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:51:02 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/3" for 127.0.0.1 at 2025-04-01 04:51:21 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"3"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3304)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/InvalidCity/3" for 127.0.0.1 at 2025-04-01 04:51:21 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"InvalidCity", "days"=>"3"}
+Completed 422 Unprocessable Entity in 28ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 32946)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/weather/London/abc" for 127.0.0.1 at 2025-04-01 04:51:21 +0800
+Processing by WeatherController#get as HTML
+  Parameters: {"city"=>"London", "days"=>"abc"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
