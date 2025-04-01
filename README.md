@@ -69,11 +69,13 @@ GET /weather/London/3
 {
   "error": "Unable to retrieve weather data"
 }
-
+```
+```
 {
   "error": "Number of days selected invalid"
 }
-
+```
+```
 {
   "error": "City not found"
 }
